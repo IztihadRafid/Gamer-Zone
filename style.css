@@ -52,3 +52,181 @@
     border-style: none;
     gap: 20px;
 }
+
+
+/*Upper banner*/
+.upper-banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.upper-left-content{
+    background-image: url("images/Group\ 14.png");
+    background-size:cover;
+    width: 700px;
+    height: 650px;
+    padding-top:100px ;
+    padding-left: 150px;
+    margin: auto;
+}
+.upper-banner-title{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+.upper-banner-header{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 90px;
+    color: rgb(206, 85, 206);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+.upper-banner-list{
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 25px;
+}
+.main-button-1{
+    padding-top: 20px;
+    background-color: rgb(231, 35, 130);
+    color: white;
+    padding: 20px 40px;
+    border-style: none;
+    border-radius: 50px;
+    font-size: 20px;
+}
+.main-button-1:hover{
+    background-color: rgb(245, 105, 173) ;
+}
+.main-button-2{
+    padding-top: 20px;
+    background-color: rgb(21, 114, 236);
+    color: white;
+    padding: 20px 40px;
+    border-style: none;
+    border-radius: 50px;
+    font-size: 20px;
+}
+.main-button-2:hover{
+    background-color: rgb(125, 175, 240) ;
+}
+.upper-banner-image{
+    
+    background-size: cover;
+    padding-right:200px;
+    padding-left: 120px;
+}
+/*Second Banner*/
+.second-banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.second-banner-image{
+    padding: 50px;
+}
+.second-right-content{
+    padding: 50px;
+   
+}
+.second-banner-title{
+    font-family:sans-serif;
+    font-weight: bold;
+    color: rgb(147, 8, 165);
+    padding-bottom: 30px;
+    text-align: right;
+}
+.second-banner-desc{
+    font-size: 20px;
+    text-align: right;
+    font-family:Arial, Helvetica, sans-serif;
+    color: gray;
+    padding-bottom: 30px;
+}
+.know-more{
+    text-align: right;
+    border: 0;
+}
+.desc2{
+    text-align: right;
+    font-size: 26px;
+    color: rgb(4, 4, 92);
+}
+.desc3{
+    text-align: right;
+    font-size: 30px;
+    color: rgb(18, 18, 94);
+}
+
+/*For Mobile View*/
+@media screen and (max-width:576px) {
+   .navigation{
+    flex-direction: column;
+    background-color: white;
+    
+   } 
+   .nav-list{
+    flex-direction: column;
+    padding-top: 30px;
+   }
+   .upper-banner{
+    flex-direction: column-reverse;
+    
+
+   }
+   .upper-banner-image{
+    width: 100px;
+    height: 600px;
+    background-size: cover;
+    margin-right: 500px;
+   }
+   .second-banner{
+    flex-direction: column;
+   }
+   .second-banner-title{
+    text-align: center;
+   }
+   .second-banner-desc{
+    text-align: center;
+   }
+   .know-more, .desc2, .desc3{
+    text-align: center;
+   }
+}
+/*For Tab view*/
+@media screen and (min-width: 577px ) , (max-width: 992px) {
+    .navigation{
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 25px 30px;
+}
+       .nav-list{
+        flex-direction: column;
+        padding-top: 20px;
+       }
+       .upper-banner{
+        flex-direction: column-reverse;
+        
+    
+       }
+       .upper-banner-image{
+        width: 100px;
+        height: 600px;
+        background-size: cover;
+        margin-right: 500px;
+       }
+
+       .second-banner{
+        flex-direction: column;
+       }
+       .second-banner-title{
+        text-align: center;
+       }
+       .second-banner-desc{
+        text-align: center;
+       }
+       .know-more, .desc2, .desc3{
+        text-align: center;
+       }
+}
